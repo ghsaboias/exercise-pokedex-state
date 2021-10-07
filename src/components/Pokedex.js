@@ -59,11 +59,13 @@ class Pokedex extends React.Component {
     render() {
         return (
             <div className="pokedex">
+              <button className="psychic">Psychic</button>
               <button className="left-button" onClick={ ((e) => this.handleArrows(e)) }>←</button>
               <div className="pokemons-container">
                 {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)[this.state.pokemon]}
               </div>
               <button className="right-button" onClick={ ((e) => this.handleArrows(e)) }>→</button>
+              <button className="fire">Fire</button>
             </div>
         );
     }
