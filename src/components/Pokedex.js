@@ -47,11 +47,13 @@ class Pokedex extends React.Component {
       await this.setState(() => ({
         pokemon: pokeLength - 1,
       }))
-    } else if (this.state.pokemon === pokeLength - 1) {
+    } else if (this.state.pokemon === pokeLength) {
       await this.setState(() => ({
         pokemon: 0,
       }))
     }
+
+    console.log(this.state.pokemon)
   }
 
     render() {
