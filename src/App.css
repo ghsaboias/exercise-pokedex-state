@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.pokedex {
+  justify-content: center;
+}
+
+.pokemons-container {
+  width: 50%;
+}
