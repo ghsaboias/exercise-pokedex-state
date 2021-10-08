@@ -53,7 +53,6 @@ class Pokedex extends React.Component {
       }))
     }
 
-    console.log(this.state.pokemon)
   }
 
     render() {
